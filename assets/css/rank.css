@@ -1,0 +1,31 @@
+
+/*熱賣排行*/
+.hot{
+    width: 420px;
+    height: 160px;
+    margin: 10px 0px -30px 70px;
+  }
+  
+.rank{
+    margin-left:170px;
+    position: relative;
+  }
+  
+
+.hot2{
+    margin:0px 30px;
+ 
+  }
+
+.hot3{
+    margin:0px 30px;
+
+  }
+
+.hot1:hover,
+.hot2:hover,
+.hot3:hover
+ {
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <title>iq+ 貓咪樂泥棒</title>
+    <style>
+        @import "css/iq\ meat.css";
+        @import "css/header.css";
+        @import "css/nav.css";
+        @import "css/footer.css";
+    </style>
+
+    <script src="js/main.js"> </script>
+    <script src="js/login.js"> </script>
+    <script src="js/member.js"> </script>
+    <script src="js/close.js"> </script>
+
+</head>
+
+<body>
+    <!-- Top鍵 -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+  <!-- 動態選單-->
+  <nav>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about_team.html" target="_blank">關於我們</a>
+        <a href="member_profile.html"  target="_blank">會員資料</a>
+        <a href="Q_A.html" target="_blank">常見問題</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+    
+    </div>
+
+  <!--選單-->
+
+  <div class="menu">
+    <a href="index.html"><img class="logo" src="img/logo.png" width="130px" height="110px"></a>
+    <a href="index.html"><img class="fp" src="img/footprint-home.png"></a>
+    <a href="shop.html" target="_blank"><img class="fp" src="img/footprint-buycar.png"></a>
+    <a onclick="document.getElementById('id01').style.display='block'"><img class="fp" src="img/footprint-me.png"></a>
+      
+
+    <!--選單-會員登入-->      
+        <div id="id01" class="modal">
+  
+          <form class="modal-content animate" method="post">
+                <div class="img-container">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img class="memberpic" src="img/member.png">
+                </div>
+          
+                <div class="member-container">
+                    <label  for="username"><b>帳號</b></label><br>
+                    <input name="email" class="form-in" id="email-1" type="email" placeholder="Enter Email" required>
+                
+                    <br><label for="password"><b>密碼</b></label>
+                    <br><input name="password" class="form-in" type="password" placeholder="Enter Password" required>
+                    <br><input class="login" type="submit" value="登入" onclick="loginsucc()">
+                    <input type="button" id="noregister" value="尚未註冊?點我註冊!" onclick="inregister()">
+  
+                </div>
+  
+                <div class="cancel-container">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">關閉</button>
+                </div>
+          </form>
+  
+        </div>
+  
+    <!--註冊頁面-->
+        <div id="id02" class="modal2">
+  
+          <form class="modal-content animate" method="post">
+                <div class="img-container">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img class="memberpic2" src="img/register dog.png">
+                </div>
+          
+                <div class="member-container2">
+                    <label  for="name"><b>姓名</b></label><br>
+                    <input name="name" class="form-in-1" id="text-1" type="text" placeholder="Enter Name" required><br>
+                    <label  for="address"><b>地址</b></label><br>
+                    <input name="address" class="form-in-1" id="text-1" type="text" placeholder="Enter Address" required><br>
+                    <label  for="tel"><b>電話</b></label><br>
+                    <input name="tel" class="form-in-1" id="text-1" type="text" placeholder="Enter Phonenumber" required><br>
+                    <label  for="username"><b>帳號</b></label><br>
+                    <input name="email" class="form-in-1" id="email-1" type="email" placeholder="Enter Email" required><br>
+                    <label for="password"><b>密碼</b></label>
+                    <br><input id="inputPassword" name="Password" class="form-in-1" type="password" placeholder="(格式:含英數至少六個字元)" pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{6,}$" required="required" oninput="setCustomValidity('');" oninvalid="setCustomValidity('請輸入正確的密碼格式:含英數至少六個字元');"/><br>
+                    <label for="password"><b>確認密碼</b></label>
+                    <br><input id="ConfirmPassword" name="ConfirmPassword" class="form-in-1" type="password" placeholder="Enter Confirm Password" required="required" oninput="setCustomValidity('');" onchange="if(document.getElementById('inputPassword').value != document.getElementById('ConfirmPassword').value){setCustomValidity('密碼不吻合');}"/><br>
+                    <br><input class="login"  id="submit" type="submit" value="註冊" onclick="signscc()">
+                    
+              </div>
+          </form>
+        </div>
+
+    <!--選單-腳印-->
+    <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+    <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+    <img class="fp2" src="img/dog.png" width="120px" height="110px"></a>
+
+    <!--選單-搜尋-->         
+    <img class="sc" src="img/search2.png" width="60px" height="60px"></a>
+    <div class="search"><input type="text" placeholder=" 關鍵字搜尋"></div>
+</div>
+</nav>
+
+
+
+  <article>
+    <!--產品資訊-->
+    <section class="productim">
+        <div class="product_name" style="font-weight: bolder;">iq+ 貓咪樂泥棒 20入/包</div>
+        <div class="introduce">
+            <p></p>
+            <br>雞肉口味：屬於貓咪的日式點心 綠茶提取物&牛磺酸添加</br>
+            <br>鰹魚口味：屬於貓咪的日式點心 貓咪最喜歡的魚魚口味 綠茶提取物&牛磺酸添加 </br>
+            <br>鮪魚口味：屬於貓咪的日式點心 貓咪最喜歡的魚魚口味 綠茶提取物&牛磺酸添加</br>
+            <p></p>
+        </div>
+
+   
+        <div class="chooseword">選擇口味：
+        <select id="choose">
+            <option name="iq+meat1" selected="selected" style="font-weight: bold;">雞肉口味 (20入)</option>
+            <option name="iq+meat2" selected="selected" style="font-weight: bold;">鰹魚口味 (20入)</option>
+            <option name="iq+meat3" selected="selected" style="font-weight: bold;">鮪魚口味 (20入)</option>
+        </select>
+        </div>
+        <!--選擇數量-->
+        <ul class="box" style="margin-top: 70px;">
+            <li class="amountname">數量：</li>
+            <li><input type="button" id="minus" class="minus" value="-"></li>
+            <li><input type="text" id="amount" class="amount" value="1" readonly="true" style="background-color:transparent;border:0;"></li>
+            <li><input type="button" id="plus" class="plus" value="+"></li>
+        </ul>
+
+        <script src="js/plusminus.js"></script>
+
+        <div class="pricename">價錢：</div>
+        <div id="product_price">NT$</div>
+        <div id="left">
+            <pre>庫存：            已售出：</pre>
+        </div>
+        
+        <!--加入購物車&直接結帳-->
+        <input class="pluscarbtn" type="button" name="plusbuycar" value="加入購物車" style="text-align: center;">
+        <input class="checkoutbtn" type="button" name="checkout" value="直接結帳" style="text-align: center;">
+
+        
+    </section>
+
+    <!--產品圖片-->
+    <section>
+        <div class="meomeat">
+            <img id="meomeatall" src="img/product/iq+ meat paste.jpg" width="425px" height="500px">
+            <div class="rec">
+                <div class="recimg">
+                    <div class="scroll">
+                        <img class="meatall" src="img/product/iq+ meat paste.jpg" onclick="change1(this);" width="82px" height="80px">
+                        <img class="meat1" src="img/iq meat/iq+ meat paste chicken.jpg" onclick="change1(this);" width="82px" height="80px">
+                        <img class="meat1-1" src="img/iq meat/iq+ meat paste bonito.jpg" onclick="change1(this);" width="82px" height="80px">
+                        <img class="meat2" src="img/iq meat/iq+ meat paste tuna.jpg" onclick="change1(this);" width="82px" height="80px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--評分分數-->
+        <div class="productstar">
+            <img src="img/star.png">
+            <img src="img/star.png">
+            <img src="img/star.png">
+            <img src="img/star.png">
+            <img src="img/star.png">
+        </div>
+        <div class="score">5.0</div>
+    </section>
+
+    <section id="product_note">
+        <h1 class="product-description">.ᐟ.ᐟ 商品描述 .ᐟ.ᐟ</h1>
+
+        <div class="crab">
+            <br>✧*。品名：iq+ 貓咪樂泥棒 - 鮪魚口味 。*✧</br>
+            <br>❣ 適用對象：成貓</br>
+            <br>❣ 商品規格：14g*4支/袋裝 14g*20支/袋裝</br>
+            <br>❣ 成份：鮪魚、鮪魚粉、雞油、膠凝劑、修飾澱粉、魚香料、綠茶提取物粉、pH調整劑(焦磷酸鈉)、牛磺酸、維生素(C、E)、水</br>
+            <br>❣ 保存期限：24個月</br>
+            <br>—-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—-
+
+
+        </br>
+        </div>
+        <div class="bonito">
+            <br>✧*。iq+ 貓咪樂泥棒 - 鰹魚口味 。*✧</br>
+            <br>❣ 適用對象：成貓</br>
+            <br>❣ 商品規格：14g*4支/袋裝 14g*20支/袋裝</br>
+            <br>❣ 成份：鮪魚、鰹魚粉、雞油、膠凝劑、修飾澱粉、綠茶提取物粉、pH調整劑(焦磷酸鈉)、牛磺酸、維生素(C、E)、水</br>
+            <br>❣ 保存期限：24個月</br>
+            <br>—-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—-
+        </div>
+
+        <div class="salmon">
+            <br>✧*。品名：iq+ 貓咪樂泥棒 - 雞肉口味 。*✧</br>
+            <br>❣ 適用對象：成貓</br>
+            <br>❣ 商品規格：14g*4支/袋裝 14g*20支/袋裝</br>
+            <br>❣ 成份：雞肉、雞肝、雞油、膠凝劑、修飾澱粉、雞調味粉、綠茶提取物粉、pH調整劑(焦磷酸鈉)、牛磺酸、維生素(C、E)、水</br>
+            <br>❣ 保存期限：24個月</br>
+            <br>—-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—-
+        </div>
+
+        <!--留言板-->
+        <div id="showmsgsec" class="rec2">
+            <p class="msgsec">商品評價</p>
+            <img class="catuser1 msgusers" src="img/meo meat/cool-glasses.png" style="width: 95px; height:97px;">
+            <div class="usernames">cat1@gmail.com</div>
+            <div class="commenttime commenttime1">2022/12/24 23:18</div>
+            <div class="userstar"><pre>★ ★ ★ ★ ★</pre></div>
+            <div class="usercomment usercomment1">上次買Meo肉泥貓咪很愛😻這次換買iq+的試試看！</div>
+
+            <img class="catuser2 msgusers" src="img/meo meat/squinting.png" style="width: 95px; height:97px;">
+            <div class="usernames">cat2@gmail.com</div>
+            <div class="commenttime">2022/11/08 10:50</div>
+            <div class="userstar"><pre>★ ★ ★ ★ ★</pre></div>
+            <div class="usercomment">價格便宜~超讚😋</div>
+
+            <img class="catuser3 msgusers" src="img/meo meat/smile.png" style="width: 95px; height:97px;">
+            <div class="usernames">cat3@gmail.com</div>
+            <div class="commenttime">2022/10/31 19:58</div>
+            <div class="userstar"><pre>★ ★ ★ ★ ★</pre></div>
+            <div class="usercomment">我家貓現在都追著我跑🤣🤣</div>
+    </div>            
+        <!--星星評分-->
+        <form method="post">
+            <div class="rec3">
+                <div class="stars">
+                    <input type="radio" name="star" id="star1" hidden />
+                    <label for="star1"></label>
+            
+                    <input type="radio" name="star" id="star2" hidden />
+                    <label for="star2"></label>
+            
+                    <input type="radio" name="star" id="star3" hidden />
+                    <label for="star3"></label>
+            
+                    <input type="radio" name="star" id="star4" hidden />
+                    <label for="star4"></label>
+            
+                    <input type="radio" name="star" id="star5" hidden />
+                    <label for="star5"></label>
+                </div>
+                    <div class="inmsgsec">評論區</p>
+                    <input type="email" name="inputemail" id="inputemail" placeholder="Enter Email" required>
+                    <textarea name="msg_content" id="msg" cols="10" rows="4" placeholder="留下評分及評論"></textarea>
+                    <input class="sendcomment" type="button" value="送出評論" name="sentmsgs" onclick="sentmsgout()">
+            </div>
+        </form>
+        <script>
+            function sentmsgout(){
+                alert("已送出評論");
+            }
+        </script>            
+
+    </section>
+
+
+        <section>
+            <h1 class="product-recommend">.ᐟ.ᐟ 推薦商品 .ᐟ.ᐟ</h1>
+            <div>
+                <div class="commend-row1fix">
+                  <a href="Meo meat.html" target="_blank"><img class="commend-row1" src="img/product/meo meat.JPG"></a>
+                  <a href="Meo cat can.html" target="_blank"><img class="commend-row1" src="img/product/meo cat can.JPG"></a>
+                  <a href="FUSO Pets.html" target="_blank"><img class="commend-row1"  src="img/product/FC.JPG"></a>
+                  <a href="Classic Pets dog can2.html" target="_blank"><img class="commend-row1"  src="img/product/Classic Pets dog can2.JPG"></a>
+                </div>
+            
+                <div class="flex-container-c fixc1">
+                  <p class="commend-p c1">NT$1270</p>
+                  <p class="commend-p2 c1">NT$950</p>
+                  <p class="commend-p3 c1">NT$699</p>
+                  <p class="commend-p4 c1">NT$570</p>
+                </div>
+            
+            </div>
+            <div style="clear:both"></div>
+        </section>
+
+
+    </article>
+
+
+   <script src="js/product.js"></script>
+
+  
+    <footer>
+        <div class="contact">
+            Copyright © 2022 唯獨寵你
+        </div>
+        <p class="look">瀏覽人數：</p>
+    </footer>
+</body>
+</html>

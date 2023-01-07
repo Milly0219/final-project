@@ -1,0 +1,169 @@
+/* Top鍵 */
+#myBtn {
+  display:none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 15px; 
+  width: 70px;
+  height: 60px;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #86a088; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 15px; 
+  font-size: 22px; 
+}
+
+#myBtn:hover {
+  background-color: rgb(129, 124, 124);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+table{
+   width: 90%;
+   font-family: "Yu Gothic UI Semibold";
+   font-size: 25px;
+   border-collapse:collapse;
+   border: rgb(188, 208, 203) solid 3px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+th{
+    background-color: #FFEBDD;
+    height: 50px;
+}
+
+.item1{
+    background-color: white;
+    font-size: 25px;
+    border-top:rgb(188, 208, 203) solid 3px;
+    
+}
+
+.item1:hover
+{
+    background-color:#F1EDEA;
+}
+
+.item4{
+    background-color: #FFF0E6;
+    border-top: #80a484;
+    border-top:rgb(188, 208, 203) solid 3px;
+
+}
+.shop-img{
+    width:150px;
+    height:200px;
+}
+
+/*購買表單*/
+  
+.shopcheck-container {
+    padding: 16px;
+    background-color: white;
+    width: 700px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: honeydew;
+  }
+
+
+.frame2{
+    width: 240px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: rgb(188, 208, 203) solid 3px;
+    background: #f1f1f1;
+    height: 50px;
+    font-size: 20px;
+  }
+
+.frame3{
+    width: 318px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: rgb(188, 208, 203) solid 3px;
+    background: #f1f1f1;
+    height: 50px;
+    font-size: 20px;
+  }
+
+
+.frame4{
+    width: 543px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: rgb(188, 208, 203) solid 3px;
+    background: #f1f1f1;
+    height: 50px;
+    font-size: 20px;
+  }
+
+.choose{
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: rgb(188, 208, 203) solid 3px;
+
+}
+  
+  /*hr樣式*/
+hr {
+    border: 1px solid #d5bcbc;
+    margin-bottom: 25px;
+  }
+  
+  /*提交按鈕的樣式 */
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:600px;
+    opacity: 0.9;
+    font-size: 25px;    
+    margin-left: 35px;
+  }
+  
+.registerbtn:hover {
+    opacity: 1;
+  }
+
+
+.form1{
+    font-size: 30px;
+    margin-top: 10px;
+    color:#69798C
+}
+
+.section1{
+    display: flex;
+    float: left;
+    margin-left: 10px;
+  }
+
+.section2{
+    display: right;
+    display: flex;
+
+  }
+
+  footer{
+    clear: both;
+  }
+
+
+  

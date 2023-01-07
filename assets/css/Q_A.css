@@ -1,0 +1,89 @@
+/* Top鍵 */
+#myBtn {
+    display:none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 15px; 
+    width: 70px;
+    height: 60px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #86a088; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 15px; 
+    font-size: 22px; 
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(129, 124, 124);
+  }
+  
+* {
+    font-family: "Yu Gothic UI Semibold";
+  }
+nav {
+    background-color: #9DBE9F;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.article1{
+    max-width: 1000px;
+    height: 750px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+}
+
+.headline{
+    width: 900px;
+    height: 70px;
+    margin: auto;
+    background-color: #b5d2c6;
+    border-radius: 15px;
+}
+
+.headline h2{
+    font-size: 35px;
+    margin-top: 30px;
+    line-height: 2;
+    border-radius: 10px;
+    
+}
+
+.hr {
+    width:100%;
+    height:0;
+    border-bottom:rgb(49, 74, 83) 3px dashed;
+}
+
+.content{
+    width: 1350px;
+    height: 70px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.content h3{
+    font-size: 25px;
+}
+
+.content p{
+    font-size: 20px;
+    color: #768e78;
+}
+
+.QA{
+    width: 100px;
+    height: 100px;
+    margin-left: 620px;
+    margin-top: -120px;
+}

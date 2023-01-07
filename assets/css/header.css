@@ -1,0 +1,90 @@
+body {
+  background-color: #D7EAD7;
+  margin: 0px;
+}
+
+
+/* 動態廣告 */
+
+* {
+  box-sizing: border-box
+}
+
+img {
+  vertical-align: middle;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* 幻燈片裡面 */
+.container {
+  max-width: 1090px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* 左右頁箭頭 */
+.arrow,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-left: -43px;
+  margin-right: -43px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 75px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* 箭頭往右 */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/*下方點*/
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* 淡入淡出動畫 */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+

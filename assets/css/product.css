@@ -1,0 +1,340 @@
+
+/*按鈕外觀*/
+.brand {
+    background-color: #6c98a7;
+    color: white;
+    padding: 10px;
+    font-size: 35px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 80px;
+    height: 70px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.sort {
+    background-color: #567c88;
+    color: white;
+    padding: 10px;
+    font-size: 35px;
+    border-radius: 10px;
+    border: none;
+    height: 70px;
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*品牌按鈕裡內容*/
+.brand-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    z-index: 1;
+    margin-left: 85px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.brand-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/*種類按鈕裡內容*/
+.sort-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    z-index: 1;
+    margin-left: 24px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sort-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*品牌*/
+.brand-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .brand-content {
+    display: block;
+}
+
+.dropdown:hover .brand {
+    background-color: #567c88;
+}
+
+/*種類*/
+.sort-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .sort-content {
+    display: block;
+}
+
+.dropdown:hover .sort {
+    background-color: #415c65;
+}
+
+
+/*照片*/
+/*row1*/
+.big-pic {
+    height: 340px;
+    width: 540px;
+    margin: 30px 0px 0px 80px;
+}
+
+.row1 {
+    height: 300px;
+    width: 220px;
+    margin-top: 28px;
+    margin-right: 40px;
+}
+
+.row1fix {
+    float: right;
+    margin-right: 60px;
+}
+
+.p1 {
+    width: 25%;
+    margin-right: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    float: right;
+    margin-top: -40px;
+    color: rgb(81, 81, 81);
+    font-family: "Jua";
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 800px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.fixp1 {
+    float: right;
+}
+
+/*row2*/
+.row2fix {
+    clear: both;
+    margin-left: 40px;
+}
+
+.row2 {
+    height: 300px;
+    width: 220px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 800px;
+    height: 20px;
+}
+
+.p2 {
+    width: 25%;
+    margin-left: 135px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    float: right;
+    margin-top: 1px;
+    font-family: "Jua";
+    color: rgb(81, 81, 81);
+
+}
+
+.big-pic2 {
+    height: 340px;
+    width: 540px;
+    margin-top: -320px;
+    margin-right: 100px;
+    float: right;
+}
+
+/*row3*/
+.big-pic3 {
+    height: 340px;
+    width: 540px;
+    margin: 67px 0px 0px 80px;
+}
+
+.row3 {
+    height: 300px;
+    width: 220px;
+    margin-top: -400px;
+    margin-right: 40px;
+}
+
+.row3fix {
+    float: right;
+    margin-right: 60px;
+}
+
+.p3 {
+    width: 25%;
+    margin-right: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    float: right;
+    margin-top: -60px;
+    color: rgb(81, 81, 81);
+    font-family: "Jua";
+}
+
+
+.flex-container3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 800px;
+    height: 20px;
+}
+
+.fixp3 {
+    float: right;
+}
+
+/*row4*/
+.row4fix {
+    clear: both;
+    margin-left: 40px;
+}
+
+.row4 {
+    height: 300px;
+    width: 220px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.flex-container4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 800px;
+    height: 20px;
+}
+
+.p4 {
+    width: 25%;
+    margin-left: 135px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    float: right;
+    margin-top: 1px;
+    font-family: "Jua";
+    color: rgb(81, 81, 81);
+
+}
+
+.big-pic4 {
+    height: 340px;
+    width: 540px;
+    margin-top: -320px;
+    margin-right: 100px;
+    float: right;
+}
+
+.row1:hover,
+.row2:hover,
+.row3:hover,
+.row4:hover
+{
+    border: #567c88 solid 7px;
+    transform: scale(1.1,1.1);
+}
+
+/*書籤*/
+
+.sidenav a {
+    position: absolute;
+    right: 0px;
+    transition: 0.3s;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    float: right;
+    border-radius: 10px;
+    margin-top: 1400px;
+    width: 80px;
+  }
+  
+.sidenav a:hover {
+    right: 35px;
+  }
+
+.dog-sidenav{
+    top: 10px;
+    background-color: #04AA6D;
+
+  }
+  
+.cat-sidenav{
+    top: 120px;
+    background-color: #2196F3;
+
+  }
+
+.dog-pic,.cat-pic{
+    height: 50px;
+    width: 50px;
+}
+
+
+

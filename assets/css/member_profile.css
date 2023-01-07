@@ -1,0 +1,427 @@
+/* Top鍵 */
+#myBtn {
+  display:none; 
+  position: fixed;
+  bottom: 20px; 
+  right: 15px; 
+  width: 70px;
+  height: 60px;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #86a088; 
+  color: white; 
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 15px; 
+  font-size: 22px; 
+}
+
+#myBtn:hover {
+  background-color: rgb(129, 124, 124);
+}
+
+nav {
+    background-color: #9DBE9F;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+article{
+  display: flex;
+  margin: auto;
+}
+
+section{
+  display: flex;
+  margin: auto;
+}
+
+.article1{
+    width:1570px;
+    height: 800px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#mySidenav a {
+    position: fixed; 
+    left: -10px;
+    transition: 0.3s; 
+    padding: 30px;
+    width: 180px; 
+    height: 70px;
+    text-decoration:none;
+    font-size: 25px; 
+    text-align:left;
+    line-height: 0.5;
+    color: rgb(255, 255, 255); 
+    border-radius: 0 15px 15px 0; 
+    font-family: 'Yu Gothic UI Semibold';
+  }
+
+  #mySidenav a:hover {
+    left: 0; 
+    color: #d9edd9;
+  }
+
+  #profile {
+    top: 20px;
+    background-color: #93a79f;
+  }
+  
+  #revise {
+    top: 70px;
+    background-color: #899b94;
+  }
+
+  #order {
+    top: 120px;
+    background-color: #8a9890;
+  }
+  
+  #comment {
+    top: 170px;
+    background-color: #748276; 
+  }
+
+  .profile{
+    margin-top: 150px;
+  }
+
+  .revise{
+    margin-top: 200px;
+  }
+
+  .order{
+    margin-top: 200px;
+  }
+
+  .comment{
+    margin-top: 250px;
+  }
+
+.sec1 {
+    width: 1300px;
+    height: 600px;
+    padding: 10px;
+    background-color: #F0FFF0;
+    border-radius: 10px;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+.headline h2{
+  font-size: 45px;
+  color: #768e78;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  white-space:nowrap;
+  text-indent: 2em;
+  font-family: 'Yu Gothic UI Semibold';
+}
+
+hr {
+  border: 1px solid #8a9daf;
+}
+
+.sec1 img{
+  width: 280px;
+  height: 270px;
+  margin-top: 160px;
+  margin-left: -230px;
+}
+
+.form{
+  margin-top: 120px;
+  margin-left: -220px;
+}
+
+ul {
+  font-size: 25px;
+  font-family: 'Yu Gothic UI Semibold';
+}
+
+#name1 {
+  list-style-image: url("../img/member_profile/name.png");
+}
+
+#birthday {
+  list-style-image: url("../img/member_profile/birthday.png");
+}
+
+#gender1 {
+  list-style-image: url("../img/member_profile/male.png");
+}
+
+#phone {
+  list-style-image: url("../img/member_profile/phone.png");
+}
+
+#address {
+  list-style-image: url("../img/member_profile/address.png");
+}
+
+#mail {
+  list-style-image: url("../img/member_profile/mail.png");
+}
+
+#password1 {
+  list-style-image: url("../img/member_profile/padlock.png");
+}
+
+.name{
+  float: left;
+  margin-left: 260px;
+}
+
+.birthaday{
+  float: left;
+  margin-left: 100px;
+}
+
+.gender{
+  float: right;
+  margin-right: 110px;
+}
+
+.phone{
+  float: left;
+  margin-left: 260px;
+}
+
+.address{
+  float: left;
+  margin-left: 260px;
+}
+
+.mail{
+  float: right;
+  margin-right: 110px;
+}
+
+.password{
+  float: left;
+  margin-left: 260px;
+}
+
+input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 18px 0;
+  display:inline-block;
+  border: 1px solid rgb(148, 159, 149);
+  border-radius: 10px;
+  box-sizing:content-box;
+  font-size: 20px;
+  font-family: 'Yu Gothic UI Semibold';
+}
+
+input[type=password], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 18px 0;
+  display:inline-block;
+  border: 1px solid rgb(148, 159, 149);
+  border-radius: 10px;
+  box-sizing:content-box;
+  font-size: 20px;
+  font-family: 'Yu Gothic UI Semibold';
+}
+
+input[type=button] {
+  width: 150px;
+  height: 50px;
+  background-color: #88a198;
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  margin: 8px 0;
+  margin-left: 280px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Yu Gothic UI Semibold';
+}
+
+input[type=button]:hover {
+  background-color: #b2dcb5;
+}
+
+button[type=button] {
+  width: 150px;
+  height: 50px;
+  background-color: #88a198;
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  margin: 8px 0;
+  margin-left: 35px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Yu Gothic UI Semibold';
+}
+
+button[type=button]:hover {
+  background-color: #b2dcb5;
+}
+
+input[type=reset] {
+  width: 150px;
+  height: 50px;
+  background-color: #a2caa4;
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  margin: 8px 0;
+  margin-left: 90px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Yu Gothic UI Semibold';
+}
+
+input[type=reset]:hover {
+  background-color:#9ed7a7;
+}
+
+.article2{
+  width:1570px;
+  height: 800px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.sec2 {
+  width: 1300px;
+  height: 600px;
+  padding: 10px;
+  background-color: #F0FFF0;
+  border-radius: 10px;
+  margin-left: 215px;
+  margin-top: -120px;
+}
+
+.sec2 img{
+  width: 280px;
+  height: 270px;
+  margin-top: 160px;
+  margin-left: -230px;
+}
+
+.article3{
+  width:1570px;
+  height: 800px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 140px;
+}
+
+.sec3 {
+  width: 1300px;
+  height: 600px;
+  padding: 10px;
+  background-color: #F0FFF0;
+  border-radius: 10px;
+  margin-left: 215px;
+  margin-top: -260px;
+}
+
+.orderphoto img{
+  width: 200px;
+  height: 230px;
+  margin-top: 200px;
+  margin-left: -200px;
+}
+
+.table1{
+  width: 850px;
+  height: 250px;
+  font-family: "Yu Gothic UI Semibold";
+  font-size: 25px;
+  border-collapse:collapse;
+  border: rgb(188, 208, 203) solid 3px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+th{
+   background-color: #FFEBDD;
+   height: 50px;
+}
+
+.item1{
+   background-color: white;
+   font-size: 25px;
+   border-top:rgb(188, 208, 203) solid 3px;
+}
+
+.item1:hover{
+   background-color:#F1EDEA;
+}
+
+.item4{
+   background-color: #FFF0E6;
+   border-top: #80a484;
+   border-top:rgb(188, 208, 203) solid 3px;
+}
+
+.shop-img{
+   width:150px;
+   height:200px;
+}
+
+.article4{
+  width:1570px;
+  height: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.sec4 {
+  width: 1300px;
+  height: 850px;
+  padding: 10px;
+  background-color: #F0FFF0;
+  border-radius: 10px;
+  margin-left: 215px;
+  margin-top: -400px;
+}
+
+.table2{
+  width: 1200px;
+  height: 250px;
+  font-family: "Yu Gothic UI Semibold";
+  font-size: 25px;
+  border-collapse:collapse;
+  border: rgb(188, 208, 203) solid 3px;
+  margin-top: 130px;
+  margin-left: -250px;
+  margin-bottom: 50px;
+}
+
+.comment1 img, .comment2 img, .comment3 img{
+  width:150px;
+  height:200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.comment1, .comment2, .comment3{
+  background-color: white;
+  font-size: 25px;
+  border-top:rgb(188, 208, 203) solid 3px;
+}
+
+.comment1:hover, .comment2:hover, .comment3:hover{
+  background-color:#F1EDEA;
+}

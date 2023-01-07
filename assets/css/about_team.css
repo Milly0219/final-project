@@ -1,0 +1,273 @@
+/* Top鍵 */
+#myBtn {
+    display:none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 15px; 
+    width: 70px;
+    height: 60px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #86a088; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 15px; 
+    font-size: 22px; 
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(129, 124, 124);
+  }
+
+nav {
+    background-color: #9DBE9F;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+  .article1{
+    max-width: 1200px;
+    height: 1200px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    margin-top: 60px;
+}
+
+.content h2, .content1 h2, .content2 h2, .headline h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Yu Gothic UI Semibold';
+    color: #768e78;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.headline h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Yu Gothic UI Semibold';
+    color: #768e78;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hr {
+    width:90%;
+    height:0;
+    border-bottom:rgb(65, 90, 99) 3px solid ;
+    margin: auto;
+}
+
+.content p, .content1 p, .content2 p{
+    font-size: 25px;
+    font-family: 'Yu Gothic UI Semibold';
+    text-indent: 2em;
+    line-height: 1.8;
+    padding-right: 40px;
+    padding-left: 50px;
+    text-align:justify;
+}
+
+.article2{
+    width: 1350px;
+    height: 820px;
+    padding: 15px;
+    margin: auto;
+}
+
+.article3{
+    width: 1350px;
+    height: 1250px;
+    padding: 15px;
+    margin: auto;
+}
+
+.container img{
+    width: 300px;
+    height: 380px;
+}
+
+.container{
+    transition: 0.6s;
+}
+  
+.container:hover{
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name1 img{
+    width: 390px;
+    height: 110px;
+    margin-top: 20px;
+}
+
+.name2 img{
+    width: 375px;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.namephoto1{
+    margin-right: 30px;
+}
+
+.namephoto2{
+    margin-left: 20px;
+}
+
+.namephoto3{
+    margin-left: 50px;
+}
+
+.namephoto4{
+    margin-left: 30px;
+}
+
+.namephoto5{
+    margin-left: 70px;
+}
+
+.namephoto6{
+    margin-left: 60px;
+}
+
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  display: flex;
+}
+
+.overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6{
+  position: absolute; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  margin-bottom: 50px;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  text-align:justify;
+}
+
+.overlay1{
+    height: 334px;
+    margin-top: 46px;
+}
+
+.overlay2{
+    height: 340px;
+    margin-top: 40px;
+}
+
+.overlay3{
+    height: 340px;
+    margin-top: 40px;
+}
+
+.overlay4{
+    height: 340px;
+    margin-top: 40px;
+}
+
+.overlay5{
+    height: 340px;
+    margin-top: 40px;
+}
+
+.overlay6{
+    height: 342px;
+    margin-top: 38px;
+}
+
+.image1 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+
+.image2{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.image3{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.image4 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+
+  .image5 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+
+  .image6 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+  
+.container:hover .overlay1, .container:hover .overlay2, .container:hover .overlay3, .container:hover .overlay4, .container:hover .overlay5, .container:hover .overlay6{
+  opacity: 1;
+}
+
+.art3{
+    display: flex;
+}
+
+.map{
+    margin-left: 60px;
+    width:1200px ;
+    height:550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shopeephoto{
+    margin: auto;
+    font-family:'Yu Gothic UI Semibold';
+}
+
+.shopeephoto img{
+    width: 70px;
+    height: 80px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+
+.shopeephoto a{
+    font-size: 30px;
+    color: rgb(86, 88, 88);
+}
+
+.shopeephoto font{
+    font-size: 25px;
+    color: rgb(86, 88, 88);
+}
+
+
+
+
+
+
+

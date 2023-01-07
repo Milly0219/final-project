@@ -1,0 +1,473 @@
+* {
+  font-family: "Yu Gothic UI Semibold";
+}
+
+nav {
+  background-color: #9DBE9F;
+  height: 150px;
+  width: 100%;
+}
+
+
+.logo {
+  margin-left: 100px;
+  margin-top: -70px;
+  margin-right: 40px;
+}
+
+
+/* 腳印選單 */
+
+.fp {
+  margin-top: -70px;
+  margin-right: 30px;
+  width: 130px;
+  height: 110px;
+}
+
+.fp2 {
+  margin-top: -70px;
+  margin-right: -2px;
+  margin-left: 3px;
+}
+
+
+/*搜尋功能*/
+.sc {
+  margin-top: -100px;
+  margin-right: 220px;
+  margin-left: 3px;
+}
+
+
+.search {
+  margin-top: -105px;
+  margin-left: 1250px;
+
+}
+
+input {
+  border-radius: 10px;
+  width: 210px;
+  height: 30px;
+  margin: 20px 10px;
+}
+
+.sc {
+  margin-left: 60px;
+  margin-top: -70px;
+  width: 60px;
+  height: 60px;
+}
+
+
+/* 動態選單 */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #78A57B;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #4b734e;
+  display: block;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #5A875D;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+
+/* 會員登入 */
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.alert-close {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert-close:hover {
+  color: black;
+}
+
+
+
+/*需要輸入字串*/
+.form-in[type=email],
+.form-in[type=password] {
+  width: 400px;
+  padding: 25px 32px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* 按鈕樣式 */
+.login {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 5px;
+  border: none;
+  cursor: pointer;
+  width: 67%;
+  font-size: 25px;
+  border-radius: 10px;
+  height: 60px;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* 關閉按鈕樣式 */
+.cancelbtn {
+  font-size: 24px;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: none;
+}
+
+/*關閉區塊*/
+.cancel-container {
+  padding-left: 180px;
+  background-color: #b4ccd9;
+  padding: 20px 20px;
+
+
+}
+
+/*圖像置中+關閉按鈕 */
+.img-container {
+  text-align: center;
+  position: relative;
+  background-color: #cfe0ea
+}
+
+/*會員圖像*/
+.memberpic {
+  width: 30%;
+  border-radius: 50%;
+}
+
+/*帳號、密碼區塊*/
+.member-container {
+  padding-left: 180px;
+  background-color: #cfe0ea
+}
+
+
+/* 模態背景 */
+.modal {
+  display: none;
+  /* 隱藏*/
+  position: fixed;
+  /*留在原位置*/
+  z-index: 1;
+  /*在最上面 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* 視窗滿寬 */
+  height: 100%;
+  /* 視窗滿高 */
+  overflow: auto;
+  /* 啟用滾動 */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 黑色帶不透明度  */
+  padding-top: -80px;
+  /* 與頂端留白 */
+}
+
+/* 模態內容/Box*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto 1% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
+
+/*視窗關閉按鈕*/
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #111;
+  ;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+b {
+  font-size: 25px;
+}
+
+/*添加縮放動畫*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/*尚未註冊*/
+#noregister {
+  font-size: 20px;
+  color: gray;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  margin-left: 80px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.alert-close {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert-close:hover {
+  color: black;
+}
+
+
+
+/*需要輸入字串*/
+.form-in-1[type=text],
+.form-in-1[type=email],
+.form-in-1[type=password] {
+  width: 400px;
+  padding: 25px 32px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* 按鈕樣式 */
+.login {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 5px;
+  border: none;
+  cursor: pointer;
+  width: 67%;
+  font-size: 25px;
+  border-radius: 10px;
+  height: 60px;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/*圖像置中+關閉按鈕 */
+.img-container {
+  text-align: center;
+  position: relative;
+  background-color: #cfe0ea
+}
+
+/*會員圖像*/
+.memberpic2 {
+  width: 200px;
+  height: 200px;
+  margin-right: 25px;
+}
+
+/*帳號、密碼區塊*/
+.member-container2 {
+  padding-left: 180px;
+  background-color: #cfe0ea;
+  height: 800px;
+}
+
+
+/* 模態背景 */
+.modal2 {
+  display: none;
+  /* 隱藏*/
+  position: fixed;
+  /*留在原位置*/
+  z-index: 1;
+  /*在最上面 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* 視窗滿寬 */
+  height: 100%;
+  /* 視窗滿高 */
+  overflow: auto;
+  /* 啟用滾動 */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 黑色帶不透明度  */
+  padding-top: -80px;
+  /* 與頂端留白 */
+}
+
+/* 模態內容/Box*/
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
+
+
+/*添加縮放動畫*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}

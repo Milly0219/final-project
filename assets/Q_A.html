@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯獨寵你｜常見問題</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <style>
+        @import "css/header.css";
+        @import "css/nav.css";
+        @import "css/footer.css";
+        @import "css/Q_A.css";
+        
+    </style>
+
+    <script src="js/main.js"> </script>
+    <script src="js/login.js"> </script>
+    <script src="js/member.js"> </script>
+    <script src="js/close.js"> </script>
+
+
+</head>
+<body>
+    <!-- Top鍵 -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <header>
+    <!-- 動態選單-->
+        <nav>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="about_team.html" target="_blank">關於我們</a>
+                <a href="member_profile.html" target="_blank">會員資料</a>
+                <a href="Q_A.html">常見問題</a>            
+            </div>
+
+             <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
+    
+            </div>
+
+    <!--選單-->
+
+            <div class="menu">
+                <a href="index.html"><img class="logo" src="img/logo.png" width="130px" height="110px"></a>
+                <a href="index.html"><img class="fp" src="img/footprint-home.png" width="130px" height="110px"></a>
+                <a href="shop.html" target="_blank"><img class="fp" src="img/footprint-buycar.png"></a>
+                <a onclick="document.getElementById('id01').style.display='block'"><img class="fp" src="img/footprint-me.png"></a>
+            
+      
+        <!--選單-會員登入-->      
+            <div id="id01" class="modal">
+      
+              <form class="modal-content animate" method="post">
+                    <div class="img-container">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img class="memberpic" src="img/member.png">
+                    </div>
+              
+                    <div class="member-container">
+                        <label  for="username"><b>帳號</b></label><br>
+                        <input name="email" class="form-in" id="email-1" type="email" placeholder="Enter Email" required>
+                    
+                        <br><label for="password"><b>密碼</b></label>
+                        <br><input name="password" class="form-in" type="password" placeholder="Enter Password" required>
+                        <br><input class="login" type="submit" value="登入" onclick="loginsucc()">
+                        <input type="button" id="noregister" value="尚未註冊?點我註冊!" onclick="inregister()">
+      
+                    </div>
+      
+                    <div class="cancel-container">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">關閉</button>
+                    </div>
+              </form>
+      
+            </div>
+      
+        <!--註冊頁面-->
+            <div id="id02" class="modal2">
+      
+              <form class="modal-content animate" method="post">
+                    <div class="img-container">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img class="memberpic2" src="img/register dog.png">
+                    </div>
+              
+                    <div class="member-container2">
+                        <label  for="name"><b>姓名</b></label><br>
+                        <input name="name" class="form-in-1" id="text-1" type="text" placeholder="Enter Name" required><br>
+                        <label  for="address"><b>地址</b></label><br>
+                        <input name="address" class="form-in-1" id="text-1" type="text" placeholder="Enter Address" required><br>
+                        <label  for="tel"><b>電話</b></label><br>
+                        <input name="tel" class="form-in-1" id="text-1" type="text" placeholder="Enter Phonenumber" required><br>
+                        <label  for="username"><b>帳號</b></label><br>
+                        <input name="email" class="form-in-1" id="email-1" type="email" placeholder="Enter Email" required><br>
+                        <label for="password"><b>密碼</b></label>
+                        <br><input id="inputPassword" name="Password" class="form-in-1" type="password" placeholder="(格式:含英數至少六個字元)" pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{6,}$" required="required" oninput="setCustomValidity('');" oninvalid="setCustomValidity('請輸入正確的密碼格式:含英數至少六個字元');"/><br>
+                        <label for="password"><b>確認密碼</b></label>
+                        <br><input id="ConfirmPassword" name="ConfirmPassword" class="form-in-1" type="password" placeholder="Enter Confirm Password" required="required" oninput="setCustomValidity('');" onchange="if(document.getElementById('inputPassword').value != document.getElementById('ConfirmPassword').value){setCustomValidity('密碼不吻合');}"/><br>
+                        <br><input class="login"  id="submit" type="submit" value="註冊" onclick="signscc()">
+                        
+                  </div>
+              </form>
+            </div>
+      
+    <!--選單-腳印-->
+            <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+            <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+            <img class="fp2" src="img/dog.png" width="120px" height="110px"></a>
+
+    <!--選單-搜尋-->         
+            <img class="sc" src="img/search2.png" width="60px" height="60px"></a>
+            <div class="search"><input type="text" placeholder=" 關鍵字搜尋"></div>
+        </div>
+    </nav>
+
+
+    </header>
+    <main>
+        <div class="article1">
+            <article>
+                <section class="headline">
+                    <h2 align="center">常 見 問 題 Q & A</h2>
+                </section>
+                <section class="content">
+                    <h3>Q : 商品下單後幾天內會收到呢？</h3>
+                    <p>全品項有分現貨和預購，現貨1-3天出貨，預購7-10天出貨。</p>
+                    <h3>Q : 要如何知道此商品是現貨還是預購呢？</h3>
+                    <p>若想了解有關商品的任何資訊，歡迎詢問我們！<br><br>
+                    <a href="mailto:yunyun394652@gmail.com?subject=唯獨寵你">點此詢問</a></p>
+                    <h3>Q : 貓咪食品的保存期限有多久呢？</h3>
+                    <p>全品項的保存期限皆為一年以上。</p>
+                    <p>可以於商品資訊處得知詳細資訊～</p>
+                    <h3>Q : 狗狗罐頭有口味可以挑嗎？</h3>
+                    <p>我們有不同品牌和口味的食品，提供給毛小孩做選擇！</p>
+                    <img class="QA" src="img/QA.png">
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            Copyright © 2022 唯獨寵你
+        </div>
+        <p class="look">瀏覽人數：<%@include file="counter1.jsp"%><%@include file="counter2.jsp"%></p>
+    </footer>
+</body>
+</html>

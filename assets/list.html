@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯獨寵你｜購物明細</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <style>
+        @import "css/header.css";
+        @import "css/nav.css";
+        @import "css/footer.css";
+        @import "css/shop.css";
+        @import "css/list.css";
+    </style>
+
+    <script src="js/main.js"> </script>
+    <script src="js/login.js"> </script>
+    <script src="js/member.js"> </script>
+    <script src="js/checkout.js"> </script>
+    <script src="js/close.js"></script>
+</head>
+<body>
+    <!-- Top鍵 -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+     <!-- 動態選單-->
+  <nav>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about_team.html" target="_blank">關於我們</a>
+        <a href="member_profile.html" target="_blank">會員資料</a>
+        <a href="Q_A.html" target="_blank">常見問題</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+    
+    </div>
+
+<!--選單-->
+
+    <div class="menu">
+        <a href="index.html"><img class="logo" src="img/logo.png" width="130px" height="110px"></a>
+        <a href="index.html"><img class="fp" src="img/footprint-home.png"></a>
+        <a href="shop.html"><img class="fp" src="img/footprint-buycar.png"></a>
+        <a onclick="document.getElementById('id01').style.display='block'"><img class="fp" src="img/footprint-me.png"></a>
+    
+
+<!--選單-會員登入-->
+        
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" method="post">
+            <div class="img-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img class="memberpic" src="img/member.png">
+            </div>
+      
+            <div class="member-container">
+                <label  for="username"><b>帳號</b></label><br>
+                <input name="email" class="form-in" id="email-1" type="email" placeholder="Enter Email" required>
+            
+                <br><label for="password"><b>密碼</b></label>
+                <br><input name="password" class="form-in" type="password" placeholder="Enter Password" required>
+                <br><input class="login" type="submit" value="登入" onclick="loginsucc()">
+                <input type="button" id="noregister" value="尚未註冊?點我註冊!" onclick="inregister()">
+            </div>
+
+            <div class="cancel-container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">關閉</button>
+            </div>
+      </form>
+
+    </div>
+
+
+<!--選單-腳印-->
+        <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+        <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+        <img class="fp2" src="img/dog.png" width="120px" height="110px"></a>
+
+<!--選單-搜尋-->         
+        <img class="sc" src="img/search2.png" width="60px" height="60px"></a>
+        <div class="search"><input type="text" placeholder=" 關鍵字搜尋"></div>
+    </div>
+</nav>
+
+<section class="section1">
+    <table align="center" >
+        <tr>   
+            <th name="prouductimg"></th>   
+            <th name="prouductname">商品名稱</th>
+            <th name="flavor">口味</th>
+            <th name="prices">小計</th>
+        </tr>
+    <!--細項一-->
+        <tr class="item1" align="center">
+            <td width="180"><img class="shop-img" src="img/product/Classic Pets dog can2.JPG"></td>
+       
+            <td width="250">加好寶乾狗糧</td>
+            <td width="180">羊肉口味</td>
+            <td width="180">$570</td>
+           
+        </tr>
+
+    <!--細項二-->
+        <tr class="item1" align="center">
+            <td width="180"><img class="shop-img" src="img/product/FC.JPG"></td>
+       
+            <td width="250">福壽貓食FUSO Pets</td>
+            <td width="180">鮪魚口味</td>
+            <td width="180">$699</td>
+           
+        </tr>
+
+        <tr class="item4" align="center">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td name="totalprice">總計：$1,269</td>
+    </table>    
+</section>
+
+<section class="section2">
+    <form id="shop-form">
+        <div class="shopcheck-container ">
+            <div class="form1" align="center">購買表單</div>
+                <p>
+                    <label for="name"><b>姓名</b></label>
+                    <input class="frame2" type="text"  name="receiver_name" id="text-1" required>
+                    <label for="psw-repeat"><b>聯絡電話</b></label>
+                    <input class="frame2" type="text"  name="receiver_tel" id="text-1" required>
+            
+                    <label for="email"><b>電子信箱</b></label>
+                    <input class="frame3" type="email"  name="receiver_email" id="email-1" required>
+                    <label for="psw-repeat"><b>付款方式</b></label>
+                    <select name="choose" class="choose">
+                        <option selected="selected" style="font-weight: bold;">貨到付款</option>
+                    </select>
+                <br>
+             
+                    <label for="psw-repeat"><b>收件地址</b></label>
+                    <input class="frame4" type="text"  name="receiver_address" id="text-1" required>
+                <hr>
+
+            <button type="submit" class="registerbtn" name="receiver_submit" onclick="checkoutsuc()">送出</button>
+
+        </div>
+     </form>
+</section>
+
+
+<footer>
+    <div class="contact">
+        Copyright © 2022 唯獨寵你
+    </div>
+    <p class="look">瀏覽人數：800</p>
+</footer>
+
+</body>
+</html>

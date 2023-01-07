@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加好寶乾狗糧15kg</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <style>
+        @import "css/Classic\ Pets\ dog\ can.css";
+        @import "css/header.css";
+        @import "css/nav.css";
+        @import "css/footer.css";
+    </style>
+
+    <script src="js/main.js"> </script>
+    <script src="js/login.js"> </script>
+    <script src="js/member.js"> </script>
+    <script src="js/close.js"> </script>
+
+</head>
+
+<body>
+    <!-- Top鍵 -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+  <!-- 動態選單-->
+  <nav>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about_team.html" target="_blank">關於我們</a>
+        <a href="member_profile.html" target="_blank">會員資料</a>
+        <a href="Q_A.html" target="_blank">常見問題</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+    
+    </div>
+
+  <!--選單-->
+
+  <div class="menu">
+    <a href="index.html"><img class="logo" src="img/logo.png" width="130px" height="110px"></a>
+    <a href="index.html"><img class="fp" src="img/footprint-home.png"></a>
+    <a href="shop.html" target="_blank"><img class="fp" src="img/footprint-buycar.png"></a>
+    <a onclick="document.getElementById('id01').style.display='block'"><img class="fp" src="img/footprint-me.png"></a>
+      
+
+    <!--選單-會員登入-->      
+        <div id="id01" class="modal">
+  
+          <form class="modal-content animate" method="post">
+                <div class="img-container">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img class="memberpic" src="img/member.png">
+                </div>
+          
+                <div class="member-container">
+                    <label  for="username"><b>帳號</b></label><br>
+                    <input name="email" class="form-in" id="email-1" type="email" placeholder="Enter Email" required>
+                
+                    <br><label for="password"><b>密碼</b></label>
+                    <br><input name="password" class="form-in" type="password" placeholder="Enter Password" required>
+                    <br><input class="login" type="submit" value="登入" onclick="loginsucc()">
+                    <input type="button" id="noregister" value="尚未註冊?點我註冊!" onclick="inregister()">
+  
+                </div>
+  
+                <div class="cancel-container">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">關閉</button>
+                </div>
+          </form>
+  
+        </div>
+  
+    <!--註冊頁面-->
+        <div id="id02" class="modal2">
+  
+          <form class="modal-content animate" method="post">
+                <div class="img-container">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img class="memberpic2" src="img/register dog.png">
+                </div>
+          
+                <div class="member-container2">
+                    <label  for="name"><b>姓名</b></label><br>
+                    <input name="name" class="form-in-1" id="text-1" type="text" placeholder="Enter Name" required><br>
+                    <label  for="address"><b>地址</b></label><br>
+                    <input name="address" class="form-in-1" id="text-1" type="text" placeholder="Enter Address" required><br>
+                    <label  for="tel"><b>電話</b></label><br>
+                    <input name="tel" class="form-in-1" id="text-1" type="text" placeholder="Enter Phonenumber" required><br>
+                    <label  for="username"><b>帳號</b></label><br>
+                    <input name="email" class="form-in-1" id="email-1" type="email" placeholder="Enter Email" required><br>
+                    <label for="password"><b>密碼</b></label>
+                    <br><input id="inputPassword" name="Password" class="form-in-1" type="password" placeholder="(格式:含英數至少六個字元)" pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{6,}$" required="required" oninput="setCustomValidity('');" oninvalid="setCustomValidity('請輸入正確的密碼格式:含英數至少六個字元');"/><br>
+                    <label for="password"><b>確認密碼</b></label>
+                    <br><input id="ConfirmPassword" name="ConfirmPassword" class="form-in-1" type="password" placeholder="Enter Confirm Password" required="required" oninput="setCustomValidity('');" onchange="if(document.getElementById('inputPassword').value != document.getElementById('ConfirmPassword').value){setCustomValidity('密碼不吻合');}"/><br>
+                    <br><input class="login"  id="submit" type="submit" value="註冊" onclick="signscc()">
+                    
+              </div>
+          </form>
+        </div>
+
+    <!--選單-腳印-->
+    <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+    <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+    <img class="fp2" src="img/dog.png" width="120px" height="110px"></a>
+
+    <!--選單-搜尋-->         
+    <img class="sc" src="img/search2.png" width="60px" height="60px"></a>
+    <div class="search"><input type="text" placeholder=" 關鍵字搜尋"></div>
+</div>
+</nav>
+
+
+
+  <article>
+    <!--產品資訊-->
+    <section class="productim">
+        <div class="product_name" style="font-weight: bolder;">加好寶乾狗糧15kg</div>
+        <div class="introduce">
+            <br>◎ Omega6和鋅能有效保健皮膚、使毛色健康亮麗</br>
+            <br>◎ 均衡的碳水化合物幫助愛犬健康有活力</br>
+            <br>◎ 維生素E和硒可幫助增加愛犬自然抵抗力</br>
+            <br>◎ 鈣、磷可幫助骨骼和牙齒的發育與成長</br>
+            <br>◎ 顆粒設計有助於清除齒垢</br>
+        </div>
+   
+        <div class="chooseword">選擇口味：
+        <select id="choose">
+            <option name="dog2can1" selected="selected" style="font-weight: bold;">牛肉口味 15kg</option>
+            <option name="dog2can2"selected="selected" style="font-weight: bold;">牛肉蔬菜 15kg</option>
+            <option name="dog2can3"selected="selected" style="font-weight: bold;">羊肉口味 15kg</option>
+            <option name="dog2can4"selected="selected" style="font-weight: bold;">雞肉口味 15kg</option>
+            <option name="dog2can5"selected="selected" style="font-weight: bold;">雞肉蔬菜 15kg</option>
+        </select>
+        </div>
+         <!--選擇數量-->
+         <ul class="box" style="margin-top: 70px;">
+            <li class="amountname">數量：</li>
+            <li><input type="button" id="minus" class="minus" value="-"></li>
+            <li><input type="text" id="amount" class="amount" value="1" readonly="true" style="background-color:transparent;border:0;"></li>
+            <li><input type="button" id="plus" class="plus" value="+"></li>
+        </ul>
+    
+            <script src="js/plusminus.js"></script>
+
+        <div class="pricename">價錢：</div>
+        <div id="product_price">NT$</div>
+        <div id="left">
+            <pre>庫存：            已售出：</pre>
+        </div>
+        
+        <!--加入購物車&直接結帳-->
+        <input class="pluscarbtn" type="button" name="plusbuycar" value="加入購物車" style="text-align: center;">
+        <input class="checkoutbtn" type="button" name="checkout" value="直接結帳" style="text-align: center;">
+
+        
+    </section>
+
+    <!--產品圖片-->
+    <section>
+        <div class="CPDC">
+            <img id="CPDCall" src="img/Classic Pets dog can2/Classic Pets dog can2.JPG" width="425px" height="500px">
+            <div class="rec">
+                <div class="recimg">
+                    <div class="scroll">
+                        <img class="canall" src="img/Classic Pets dog can2/Classic Pets dog can2.JPG" onclick="change(this);" width="82px" height="80px">
+                        <img class="can1" src="img/Classic Pets dog can2/Classic Pets dog2 beef.jpg" onclick="change(this);" width="82px" height="80px">
+                        <img class="can2" src="img/Classic Pets dog can2/Classic Pets dog2 beef vegetable.jpg" onclick="change(this);" width="82px" height="80px">
+                        <img class="can3" src="img/Classic Pets dog can2/Classic Pets dog2 lamb.jpg" onclick="change(this);" width="82px" height="80px">
+                        <img class="can4" src="img/Classic Pets dog can2/Classic Pets dog2 chicken.jpg" onclick="change(this);" width="82px" height="80px">
+                        <img class="can5" src="img/Classic Pets dog can2/Classic Pets dog2 chicken vegetable.jpg" onclick="change(this);" width="82px" height="80px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--評分分數-->
+        <div class="productstar">
+            <img src="img/star.png">
+            <img src="img/star.png">
+            <img src="img/star.png">
+            <img src="img/star.png">
+            <img src="img/star.png">
+        </div>
+        <div class="score">5.0</div>
+    </section>
+
+    <section id="product_note">
+        <h1 class="product-description">.ᐟ.ᐟ 商品描述 .ᐟ.ᐟ</h1>
+
+        <div class="beef">
+            <br>✧*。 品名：加好寶乾狗糧 - 牛肉口味 - 中大型成犬專用 。*✧</br>
+            <br>❣ 成份：玉米、黃豆、雞肉、樹薯、米糠、雞油、礦物質、維生素、香料（牛肉口味來自於香料）、抗氧化劑</br>
+            <br>❣ 保存期限：18個月</br>
+            <br>—-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—-
+        </br>
+        </div>
+
+        <div class="beefveg">
+            <br>✧*。 品名：加好寶乾狗糧 - 牛肉蔬菜口味 - 中大型成犬專用 。*✧</br>
+            <br>❣ 成份：玉米、黃豆、雞肉、樹薯、米糠、雞油、礦物質、維生素、胡蘿蔔、香料（牛肉口味來自於香料）、抗氧化劑</br>
+            <br>❣ 保存期限：18個月</br>
+            <br>—-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—-
+        </div>
+
+        <div class="beefliver">
+            <br>✧*。 品名：加好寶乾狗糧 - 羊肉口味 - 中大型成犬專用 。*✧</br>
+            <br>❣ 成份：玉米、黃豆、樹薯、米糠、雞肉、雞油、礦物質、羊肉、維生素、抗氧化劑</br>
+            <br>❣ 保存期限：18個月</br>
+            <br>—-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—-
+        </div>
+
+        <div class="chicken-rollup">
+            <br>✧*。 品名：加好寶乾狗糧 - 雞肉口味 - 中大型成犬專用 。*✧</br>
+            <br>❣ 成份：玉米、黃豆、雞肉、樹薯、米糠、雞油、礦物質、維生素、抗氧化劑</br>
+            <br>❣ 保存期限：18個月</br>
+            <br>—-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—- —-✩———-✩———-✩———-✩———-✩—-
+        </div>
+
+        <div class="chickenveg">
+            <br>✧*。 品名：加好寶乾狗糧 - 雞肉蔬菜口味 - 中大型成犬專用。*✧</br>
+            <br>❣ 成份：玉米、黃豆、雞肉、樹薯、米糠、雞油、礦物質、維生素、胡蘿蔔、抗氧化劑</br>
+            <br>❣ 保存期限：18個月</br>
+        </div>
+
+        <!--留言板-->
+        <div id="showmsgsec" class="rec2">
+            <p class="msgsec">商品評價</p>
+            <img class="doguser1 msgusers" src="img/Classic Pets dog can/dog.png" style="width: 75px; height:75px;">
+            <div class="usernames">dog1@gmail.com</div>
+            <div class="commenttime commenttime1">2022/12/12 15:40</div>
+            <div class="userstar"><pre>★ ★ ★ ★ ★</pre></div>
+            <div class="usercomment usercomment1">我家Petty超愛💜</div>
+
+            <img class="doguser2 msgusers" src="img/Classic Pets dog can/bergamasco.png" style="width: 75px; height:75px;">
+            <div class="usernames">dog2@gmail.com</div>
+            <div class="commenttime">2022/12/01 08:00</div>
+            <div class="userstar"><pre>★ ★ ★ ★ ★</pre></div>
+            <div class="usercomment">還會再定期回購😍</div>
+
+            <img class="doguser3 msgusers" src="img/Classic Pets dog can/schnauzer.png" style="width: 75px; height:75px;">
+            <div class="usernames">dog3@gmail.com</div>
+            <div class="commenttime">2022/11/18 22:42</div>
+            <div class="userstar"><pre>★ ★ ★ ★ ★</pre></div>
+            <div class="usercomment">我家狗狗吃超多又超快！👍🏻</div>
+    </div>            
+        <!--星星評分-->
+        <form method="post">
+            <div class="rec3">
+                <div class="stars">
+                    <input type="radio" name="star" id="star1" hidden />
+                    <label for="star1"></label>
+            
+                    <input type="radio" name="star" id="star2" hidden />
+                    <label for="star2"></label>
+            
+                    <input type="radio" name="star" id="star3" hidden />
+                    <label for="star3"></label>
+            
+                    <input type="radio" name="star" id="star4" hidden />
+                    <label for="star4"></label>
+            
+                    <input type="radio" name="star" id="star5" hidden />
+                    <label for="star5"></label>
+                </div>
+                    <div class="inmsgsec">評論區</p>
+                    <input type="email" name="inputemail" id="inputemail" placeholder="Enter Email" required>
+                    <textarea name="msg_content" id="msg" cols="10" rows="4" placeholder="留下評分及評論"></textarea>
+                    <input class="sendcomment" type="button" value="送出評論" name="sentmsgs" onclick="sentmsgout()">
+            </div>
+        </form>
+        <script>
+            function sentmsgout(){
+                alert("已送出評論");
+            }
+        </script>            
+
+    </section>
+
+
+        <section>
+            <h1 class="product-recommend">.ᐟ.ᐟ 推薦商品 .ᐟ.ᐟ</h1>
+            <div>
+                <div class="commend-row1fix">
+                  <a href="Careline.html" target="_blank"><img class="commend-row1" src="img/Classic Pets dog can2/Careline.jpg"></a>
+                  <a href="Classic Pets dog can.html" target="_blank"><img class="commend-row1" src="img/Classic Pets dog can2/Classic Pets dog can.JPG"></a>
+                  <a href="Classic Pets cat.html" target="_blank"><img class="commend-row1"  src="img/Classic Pets dog can2/Classic Pets cat.JPG"></a>
+                  <a href="Bravo dog.html" target="_blank"><img class="commend-row1"  src="img/Classic Pets dog can2/bravo dog.JPG"></a>
+                </div>
+            
+                <div class="flex-container-c fixc1">
+                  <p class="commend-p c1">NT$780</p>
+                  <p class="commend-p2 c1">NT$850</p>
+                  <p class="commend-p3 c1">NT$530</p>
+                  <p class="commend-p4 c1">NT$1250</p>
+                </div>
+            
+            </div>
+            <div style="clear:both"></div>
+        </section>
+
+
+    </article>
+
+
+   <script src="js/product.js"></script>
+
+  
+    <footer>
+        <div class="contact">
+            Copyright © 2022 唯獨寵你
+        </div>
+        <p class="look">瀏覽人數：</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* Top鍵 */
+#myBtn {
+    display:none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 15px; 
+    width: 70px;
+    height: 60px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #86a088; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 15px; 
+    font-size: 22px; 
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(129, 124, 124);
+  }
+  
+* {
+    box-sizing: border-box;
+}
+
+.shop-title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+table {
+    width: 80%;
+    font-family: "Yu Gothic UI Semibold";
+    font-size: 25px;
+    border-collapse: collapse;
+    border: rgb(188, 208, 203) solid 3px;
+}
+
+th {
+    background-color: #FFEBDD;
+    height: 50px;
+}
+
+.item1 {
+    background-color: white;
+    font-size: 25px;
+    border-top: rgb(188, 208, 203) solid 3px;
+
+}
+
+.item1:hover {
+    background-color: #F1EDEA;
+}
+
+.item4 {
+    background-color: #FFEBDD;
+    border-top: #80a484;
+    border-top: rgb(188, 208, 203) solid 3px;
+
+}
+
+.shop-img {
+    width: 150px;
+    height: 200px;
+}
+
+
+/*選擇口味*/
+.shop-select {
+    font-size: 25px;
+    width: 175px;
+    height: 43px;
+    border-radius: 13px;
+    font-weight: bold;
+    background-color: white;
+    border: #80a484 4px solid;
+    text-align: center;
+    font-family: "Yu Gothic UI Semibold";
+}
+
+.checkout {
+    border-radius: 10px;
+    font-size: 25px;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+    background-color: #809683;
+    font-weight: 600;
+    transition: 0.1s;
+    width: 120px;
+    height: 55px;
+}
+
+.checkout:hover {
+    border: 4px solid #647166;
+}
+
+.checkout:active {
+    box-shadow: inset 0px 0px 5px 3px #667568;
+    transform: scale(1.02);
+}
+
+/*數量加減*/
+
+
+.delete {
+    cursor: pointer;
+}
+
+.plus,
+.minus {
+    border-radius: 15px;
+    font-size: 30px;
+    color: #5c715d;
+    cursor: pointer;
+    border: #80a484 4px solid;
+    background-color: white;
+    font-weight: bolder;
+    transition: 0.1s;
+    width: 40px;
+    height: 40px;
+    line-height: 0px;
+    margin-top: -60px;
+    margin-left: -30px;
+    
+}
+
+.plus:active,
+.minus:active {
+    transform: scale(1.05);
+    box-shadow: inset 0px 0px 5px 3px whitesmoke;
+
+}
+
+.amount {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -70px;
+    margin-right: 50px;
+    
+
+}
+
+
+.box input {
+    display: inline;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+}
+
+li {
+    margin-top: -12px;
+
+}
+
+.minusfix {
+    margin-bottom:-85px;   
+    margin-left: -80px;
+    margin-top: -10px;
+}
+
+.plusfix {
+    margin-top: -60px;
+    margin-left: -90px;
+    margin-right: 50px;
+
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯獨寵你｜會員資料</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <style>
+        @import "css/header.css";
+        @import "css/nav.css";
+        @import "css/footer.css";
+        @import "css/member_profile.css";
+        
+    </style>
+    <script src="js/main.js"> </script>
+    <script src="js/login.js"> </script>
+    <script src="js/member.js"> </script>
+    <script src="js/close.js"></script>
+
+    
+</head>
+<body>
+    <!-- Top鍵 -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <header>
+        <!-- 動態選單-->
+            <nav>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="about_team.html" target="_blank">關於我們</a>
+                        <a href="member_profile.html">會員資料</a>
+                        <a href="Q_A.html" target="_blank">常見問題 </a>
+                    </div>
+        
+                     <div id="main">
+                        <button class="openbtn" onclick="openNav()">&#9776; </button>
+            
+                    </div>
+        
+            <!--選單-->
+        
+                    <div class="menu">
+                        <a href="index.html"><img class="logo" src="img/logo.png" width="130px" height="110px"></a>
+                        <a href="index.html"><img class="fp" src="img/footprint-home.png" width="130px" height="110px"></a>
+                        <a href="shop.html" target="_blank"><img class="fp" src="img/footprint-buycar.png" width="130px" height="110px"></a>
+                        <a onclick="document.getElementById('id01').style.display='block'"><img class="fp" src="img/footprint-me.png"></a>
+                        <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+                        <img class="fp2" src="img/foot-prints.png" width="120px" height="140px"></a>
+                        <img class="fp2" src="img/dog.png" width="120px" height="110px"></a>
+        
+               
+                        <img class="sc" src="img/search2.png" width="60px" height="60px"></a>
+                        <div class="search"><input type="text" placeholder=" 關鍵字搜尋"></div>
+                    </div>
+
+                        <!--選單-會員登入-->      
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" method="post">
+                  <div class="img-container">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img class="memberpic" src="img/member.png">
+                  </div>
+            
+                  <div class="member-container">
+                      <label  for="username"><b>帳號</b></label><br>
+                      <input name="email" class="form-in" id="email-1" type="email" placeholder="Enter Email" required>
+                  
+                      <br><label for="password"><b>密碼</b></label>
+                      <br><input name="password" class="form-in" type="password" placeholder="Enter Password" required>
+                      <br><input class="login" type="submit" value="登入" onclick="loginsucc()">
+                      <input type="button" id="noregister" value="尚未註冊?點我註冊!" onclick="inregister()">
+    
+                  </div>
+    
+                  <div class="cancel-container">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">關閉</button>
+                  </div>
+            </form>
+    
+          </div>
+    
+      <!--註冊頁面-->
+          <div id="id02" class="modal2">
+    
+            <form class="modal-content animate" method="post">
+                  <div class="img-container">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img class="memberpic2" src="img/register dog.png">
+                  </div>
+            
+                  <div class="member-container2">
+                      <label  for="name"><b>姓名</b></label><br>
+                      <input name="name" class="form-in-1" id="text-1" type="text" placeholder="Enter Name" required><br>
+                      <label  for="address"><b>地址</b></label><br>
+                      <input name="address" class="form-in-1" id="text-1" type="text" placeholder="Enter Address" required><br>
+                      <label  for="tel"><b>電話</b></label><br>
+                      <input name="tel" class="form-in-1" id="text-1" type="text" placeholder="Enter Phonenumber" required><br>
+                      <label  for="username"><b>帳號</b></label><br>
+                      <input name="email" class="form-in-1" id="email-1" type="email" placeholder="Enter Email" required><br>
+                      <label for="password"><b>密碼</b></label>
+                      <br><input id="inputPassword" name="Password" class="form-in-1" type="password" placeholder="(格式:含英數至少六個字元)" pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{6,}$" required="required" oninput="setCustomValidity('');" oninvalid="setCustomValidity('請輸入正確的密碼格式:含英數至少六個字元');"/><br>
+                      <label for="password"><b>確認密碼</b></label>
+                      <br><input id="ConfirmPassword" name="ConfirmPassword" class="form-in-1" type="password" placeholder="Enter Confirm Password" required="required" oninput="setCustomValidity('');" onchange="if(document.getElementById('inputPassword').value != document.getElementById('ConfirmPassword').value){setCustomValidity('密碼不吻合');}"/><br>
+                      <br><input class="login"  id="submit" type="submit" value="註冊" onclick="signscc()">
+                      
+                </div>
+            </form>
+          </div>
+            </nav>
+    </header>
+    <main>
+        <div class="article1">
+            <article >
+                <section>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="#profilee" id="profile" class="revise">會員資料</a>
+                        <a href="#orderr" id="order" class="order">訂單紀錄</a>
+                        <a href="#commentt" id="comment" class="comment">評論紀錄</a>
+                    </div>
+                </section>
+                <section class="sec1">
+                    <div class="headline">
+                        <h2>會員資料</h2>
+                        <hr>
+                    </div>
+                    <div>
+                        <img src="img/member_profile/dog.png">
+                    </div>
+                    <div class="form">
+                        <form id="profilee">
+                            <ul>
+                                <li class="name">姓名
+                                    <input type="text" name="member-name" placeholder="悠尼思">
+                                </li>
+                                <li class="birthaday">生日
+                                    <input type="text" name="birth" placeholder="2002-11-01">
+                                </li>
+                                <li class="gender">性別
+                                    <input type="text" name="gender"  value="男" readonly>
+                                </li>
+                                <li class="phone">電話
+                                    <input type="text" name="tel" placeholder="0920230101">
+                                </li>
+                                <li class="address">地址
+                                    <input type="text" name="addr" placeholder="321桃園市振平區安屏路36號">
+                                </li>
+                                <li class="mail">郵件
+                                    <input type="text" name="member-email" value="unus1120101@gmail.com" readonly>
+                                </li>
+                                <li class="password">密碼
+                                    <input type="password" name="member-password" value="abc123" readonly>
+                                </li>
+                            </ul>        
+                            <input type="button" value="修改" onclick="location.href='#revisee'">
+                        </form>
+                    </div>
+                </section>
+            </article>
+        </div>
+        
+        
+        <div class="article3">
+            <article >
+                <section id="orderr" class="sec3">
+                    <div class="headline">
+                        <h2>訂單紀錄</h2>
+                        <hr>
+                    </div>
+                    <div class="orderphoto">
+                        <img src="img/member_profile/shopping-bag.png">
+                    </div>
+                    <section>
+                        <table class="table1" align="center">
+                            <tr>   
+                                <th name="prouductimg"></th>   
+                                <th name="prouductname">商品名稱</th>
+                                <th name="flavor">口味</th>
+                                <th name="prices">小計</th>
+                            </tr>
+                        <!--細項一-->
+                            <tr class="item1" align="center">
+                                <td width="180"><img class="shop-img" src="img/product/Classic Pets dog can2.JPG"></td>
+                           
+                                <td width="250">加好寶乾狗糧</td>
+                                <td width="180">羊肉口味</td>
+                                <td width="180">$570</td>
+                               
+                            </tr>
+                    
+                        <!--細項二-->
+                            <tr class="item1" align="center">
+                                <td width="180"><img class="shop-img" src="img/product/FC.JPG"></td>
+                           
+                                <td width="250">福壽貓食FUSO Pets</td>
+                                <td width="180">鮪魚口味</td>
+                                <td width="180">$699</td>
+                               
+                            </tr>
+                    
+                            <tr class="item4" align="center">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td name="totalprice">總計：$1,269</td>
+                        </table>    
+                    </section>
+                </section>
+            </article>
+        </div>
+        <div class="article4">
+            <article >
+                <section id="commentt" class="sec4">
+                    <div class="headline">
+                        <h2>評論紀錄</h2>
+                        <hr>
+                    </div>
+                    <section>
+                        <table class="table2" align="center">
+                            <tr>
+                                <th name="prouductimg"></th>
+                                <th>日期/時間</th>
+                                <th name="prouductname">商品名稱</th>
+                                <th name="flavor">口味</th>
+                                <th>評分/評論</th>
+                            </tr>
+                            <tr class="comment1" align="center">
+                                <td width="180"><img src="img/Classic Pets dog can/Classic Pets dog can all.jpg"></td>
+                                <td width="220">2022/12/12 15:40</td>
+                                <td width="200">加好寶狗罐</td>
+                                <td width="200">雞肉總匯口味</td>
+                                <td width="250">⭐⭐⭐⭐⭐<br>我家狗狗超愛吃❤️</td>
+                            </tr>
+                            <tr class="comment2" align="center">
+                                <td width="180"><img src="img/Bravo dog/Bravo dog all.JPG"></td>
+                                <td width="220">2022/12/02 20:23</td>
+                                <td width="200">Bravo犬食<br>膠原蛋白配方</td>
+                                <td width="200">牛肉口味</td>
+                                <td width="250">⭐⭐⭐⭐⭐<br>非常香！！<br>Lucky吃得很開心👍🏻</td>
+                            </tr>
+                            <tr class="comment3" align="center">
+                                <td width="180"><img src="img/meo cat can/meo cat can all-1.JPG"></td>
+                                <td width="220">2022/11/22 11:01</td>
+                                <td width="200">Me-O貓罐</td>
+                                <td width="200">鮪魚口味</td>
+                                <td width="250">⭐⭐⭐⭐⭐<br>咪咪表示很喜歡💯<br>下次要吃沙丁魚口味的！</td>
+                            </tr>
+                        </table>
+                    </section>
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            Copyright © 2022 唯獨寵你
+        </div>
+        <p class="look">瀏覽人數：<%@include file="counter1.jsp"%><%@include file="counter2.jsp"%></p>
+    </footer>
+</body>
+</html>
